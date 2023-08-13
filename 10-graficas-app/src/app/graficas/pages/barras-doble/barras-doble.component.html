@@ -1,0 +1,13 @@
+<h1 class="text-4xl font-semibold pb-3">Gráficas Dobles</h1>
+
+<div class="columns-2">
+  <div>
+    <app-grafica-barra
+      [horizontal]="true"
+      [barChartData]="productoData"
+    ></app-grafica-barra>
+  </div>
+  <div>
+    <app-grafica-barra [barChartData]="proveedoresData"></app-grafica-barra>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<h1 class="text-4xl font-semibold pb-3">Gráfica de Dona</h1>
+
+<div
+  class="w-full bg-yellow-400 p-5 rounded-lg"
+  *ngIf="doughnutChartData.datasets.length === 0; else divGrafica"
+>
+  Cargando Data...
+</div>
+
+<ng-template #divGrafica>
+  <div class="h-4/5 flex justify-center items-center">
+    <canvas
+      baseChart
+      class="chart"
+      [data]="doughnutChartData"
+      [type]="doughnutChartType"
+    >
+    </canvas>
+  </div>
+  <i>Información en Miles de Millones de usuarios.</i>
+</ng-template>

@@ -1,0 +1,10 @@
+<ul class="border-2 m-3 border-black rounded-lg px-5">
+  <li
+    *ngFor="let item of menu"
+    [routerLink]="[item.ruta]"
+    class="text-lg py-1 cursor-pointer"
+    routerLinkActive="underline decoration-wavy text-sky-700 font-bold"
+  >
+    {{ item.texto }}
+  </li>
+</ul>

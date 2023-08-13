@@ -1,0 +1,21 @@
+<h1 class="text-4xl font-semibold pb-3">Gráfica de Barras</h1>
+
+<div class="h-4/5 flex justify-center items-center">
+  <canvas
+    baseChart
+    class="chart"
+    [data]="barChartData"
+    [options]="barChartOptions"
+    [type]="barChartType"
+  >
+  </canvas>
+</div>
+
+<div class="flex justify-end mt-2">
+  <button
+    class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm"
+    (click)="randomize()"
+  >
+    Update
+  </button>
+</div>
